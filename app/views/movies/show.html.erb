@@ -1,0 +1,8 @@
+<%= @movie.title %> <br>
+<%= @movie.overview %> <br>
+<%= @movie.rating %> <br>
+<%= image_tag @movie.poster_url, alt: "poster", width: 200 %>
+<br>
+
+
+<%= link_to "go back to all the movies", movies_path %> <br>

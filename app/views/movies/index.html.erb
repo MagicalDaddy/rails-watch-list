@@ -1,0 +1,8 @@
+<h1> All movies: </h1>
+<% @movies.each do | movie | %>
+<%= link_to movie.title, movie_path(movie) %> <br>
+
+<%= image_tag movie.poster_url, alt: "poster", width: 200 %>
+<%= movie.overview %> <br>
+<%= movie.rating %> <br>
+<% end %>
